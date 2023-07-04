@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/108b0ec190.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Student Management System</h1>
+  <div class="container">
+    <div class="displayStudent">
+        <h2>Students List</h2>
+        <div id="searchs">
+            <div class="searchfiled">
+            <input type="text" id="searchInput" placeholder="Search by name, email, or degree"></div>
+            <div class="searchbutton"> <button onclick="searchStudents()" class="searchButtom">Search</button> </div>
+        </div>
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Grade</th>
+              <th>Degree</th>
+              <th>Email</th>
+              <th>Edit <i class="fa-sharp fa-solid fa-pen-to-square"></i></th>
+              <th>Delete <i class="fa-solid fa-trash"></i> </th>
+            </tr>
+          </thead>
+          <tbody id="studentTableBody">
+          </tbody>
+        </table>
+    </div>
+    <div class="addStudent">
+        <h2>Add Student</h2>
+        <form id="addStudentForm">
+            <div class="container2">
+                <div class="item">
+                    <input type="text" id="name" placeholder="Name" required></div>
+                <div class="item"> 
+                    <input type="number" id="age" placeholder="Age"></div>
+                <div class="item">
+                    <input type="text" id="grade" placeholder="Grade"></div>
+                <div class="item">
+                    <input type="text" id="degree" placeholder="Degree"></div>
+                <div class="item"> 
+                    <input type="email" id="email" placeholder="Email"></div>
+                <div class="item"> <button type="submit" class="searchButtom" id="submitbtn">Add Student</button></div>
+            </div>
+        </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
